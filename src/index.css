@@ -1,0 +1,30 @@
+:root {
+  --color-bg: #EDEAFB;
+  --color-surface: #FFFFFF;
+  --color-banner: #DCD5F7;
+
+  --color-pink: #F23D82;
+  --color-orange: #F5A623;
+  --color-ink: #16112B;
+
+  --color-text-primary: #16112B;
+  --color-text-secondary: #8B87A3;
+
+  --font-main: 'Manrope', sans-serif;
+
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
