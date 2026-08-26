@@ -3,6 +3,7 @@ import PhraseList from "./components/PhraseList"
 import { initialPhrases } from "./data/phrases"
 import type { Phrase } from "./types"
 import AddPhraseForm from "./components/AddPhraseForm"
+import Layout from "./components/Layout"
 
 function App() {
   const [ phrases, setPhrases ] = useState<Phrase[]>(() => {
@@ -19,10 +20,10 @@ function App() {
   },[phrases])
 
   return (
-    <>
-    <AddPhraseForm onAddPhrase={handleAddPhrase} />
-    <PhraseList phrases={phrases}/>
-    </>
+    <Layout>
+      <AddPhraseForm onAddPhrase={handleAddPhrase} />
+      <PhraseList phrases={phrases}/>
+    </Layout>
   )
 }
 

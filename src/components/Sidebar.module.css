@@ -1,0 +1,36 @@
+.sidebar {
+  width: 200px;
+  height: calc(100vh - 50px);
+  padding: 20px;
+  margin: 20px;
+  border-right:#e5e5e5;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navItem {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.navItemActive {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  background-color: var(--color-banner);
+  color: var(--color-ink);
+}
